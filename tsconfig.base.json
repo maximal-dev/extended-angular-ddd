@@ -1,0 +1,95 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2020", "dom"],
+    "paths": {
+      "@architect-poc/dashboards-public-feature-dashboard-list": [
+        "libs/dashboards/public/feature-dashboard-list/src/index.ts"
+      ],
+      "@architect-poc/dashboards-public-feature-dashboard-view": [
+        "libs/dashboards/public/feature-dashboard-view/src/index.ts"
+      ],
+      "@architect-poc/dashboards-public-state": [
+        "libs/dashboards/public/state/src/index.ts"
+      ],
+      "@architect-poc/dashboards/data": ["libs/dashboards/data/src/index.ts"],
+      "@architect-poc/dashboards/domain": [
+        "libs/dashboards/domain/src/index.ts"
+      ],
+      "@architect-poc/dashboards/public/ui": [
+        "libs/dashboards/public/ui/src/index.ts"
+      ],
+      "@architect-poc/dashboards/use-cases": [
+        "libs/dashboards/use-cases/src/index.ts"
+      ],
+      "@architect-poc/design-system/public/ui": [
+        "libs/design-system/public/ui/src/index.ts"
+      ],
+      "@architect-poc/settings-public-feature-settings-modal": [
+        "libs/settings/public/feature-settings-modal/src/index.ts"
+      ],
+      "@architect-poc/settings-public-state": [
+        "libs/settings/public/state/src/index.ts"
+      ],
+      "@architect-poc/settings/data": ["libs/settings/data/src/index.ts"],
+      "@architect-poc/settings/domain": ["libs/settings/domain/src/index.ts"],
+      "@architect-poc/settings/public/ui": [
+        "libs/settings/public/ui/src/index.ts"
+      ],
+      "@architect-poc/settings/use-cases": [
+        "libs/settings/use-cases/src/index.ts"
+      ],
+      "@architect-poc/sidebar-public-feature-sidebar": [
+        "libs/sidebar/public/feature-sidebar/src/index.ts"
+      ],
+      "@architect-poc/sidebar-public-state": [
+        "libs/sidebar/public/state/src/index.ts"
+      ],
+      "@architect-poc/sidebar/data": ["libs/sidebar/data/src/index.ts"],
+      "@architect-poc/sidebar/domain": ["libs/sidebar/domain/src/index.ts"],
+      "@architect-poc/sidebar/public/ui": [
+        "libs/sidebar/public/ui/src/index.ts"
+      ],
+      "@architect-poc/sidebar/use-cases": [
+        "libs/sidebar/use-cases/src/index.ts"
+      ],
+      "@architect-poc/spaces-public-feature-space-list": [
+        "libs/spaces/public/feature-space-list/src/index.ts"
+      ],
+      "@architect-poc/spaces-public-feature-space-view": [
+        "libs/spaces/public/feature-space-view/src/index.ts"
+      ],
+      "@architect-poc/spaces-public-state": [
+        "libs/spaces/public/state/src/index.ts"
+      ],
+      "@architect-poc/spaces/data": ["libs/spaces/data/src/index.ts"],
+      "@architect-poc/spaces/domain": ["libs/spaces/domain/src/index.ts"],
+      "@architect-poc/spaces/public/ui": ["libs/spaces/public/ui/src/index.ts"],
+      "@architect-poc/spaces/use-cases": ["libs/spaces/use-cases/src/index.ts"],
+      "@architect-poc/utils": ["libs/utils/src/index.ts"]
+    },
+    "rootDir": "."
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

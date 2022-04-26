@@ -1,0 +1,123 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "domain:public",
+                "onlyDependOnLibsWithTags": [
+                  "domain:public"
+                ]
+              },
+              {
+                "sourceTag": "domain:dashboards",
+                "onlyDependOnLibsWithTags": [
+                  "domain:dashboards",
+                  "domain:public"
+                ]
+              },
+              {
+                "sourceTag": "domain:settings",
+                "onlyDependOnLibsWithTags": [
+                  "domain:settings",
+                  "domain:public"
+                ]
+              },
+              {
+                "sourceTag": "domain:spaces",
+                "onlyDependOnLibsWithTags": [
+                  "domain:spaces",
+                  "domain:public"
+                ]
+              },
+              {
+                "sourceTag": "domain:domain:sidebar",
+                "onlyDependOnLibsWithTags": [
+                  "domain:domain:sidebar",
+                  "domain:public"
+                ]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:feature",
+                  "type:use-cases",
+                  "type:data",
+                  "type:domain",
+                  "type:ui",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:data",
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:data",
+                  "type:use-cases",
+                  "type:shared-state",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:ui",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:shared-state",
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:data",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:domain",
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": [
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:use-cases",
+                "onlyDependOnLibsWithTags": [
+                  "type:use-cases",
+                  "type:domain",
+                  "type:util"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    }
+  ]
+}
